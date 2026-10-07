@@ -1,0 +1,289 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e1b4b, #312e81);
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+
+/* HEADER */
+
+header {
+    background: rgba(15, 23, 42, 0.95);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 3px solid #6366f1;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+    color: #c7d2fe;
+}
+
+
+/* MAIN CONTAINER */
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+
+/* COMMON CARD */
+
+.card,
+.result-section,
+.how-card {
+    background: rgba(255, 255, 255, 0.97);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+
+/* INPUT CARD */
+
+.input-card {
+    text-align: center;
+}
+
+.input-card h2 {
+    font-size: 27px;
+    color: #312e81;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+
+/* INPUT AREA */
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.input-area div {
+    width: 45%;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #334155;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+
+/* BUTTONS */
+
+button {
+    border: none;
+    padding: 14px 25px;
+    margin: 5px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(79, 70, 229, 0.4);
+}
+
+.clear-btn {
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+.clear-btn:hover {
+    box-shadow: 0 8px 20px rgba(220, 38, 38, 0.35);
+}
+
+
+/* ERROR */
+
+#error {
+    color: #dc2626;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+
+/* RESULT SECTION */
+
+.result-section h2 {
+    text-align: center;
+    color: #312e81;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+
+/* RESULT GRID */
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+
+/* RESULT BOX */
+
+.result-box {
+    padding: 20px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    border-left: 5px solid #6366f1;
+    transition: 0.3s;
+}
+
+.result-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.result-box span {
+    display: block;
+    color: #64748b;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.result-box strong {
+    font-size: 19px;
+    color: #1e293b;
+}
+
+
+/* HOW IT WORKS */
+
+.how-card h2 {
+    text-align: center;
+    color: #312e81;
+    margin-bottom: 25px;
+    font-size: 27px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.steps div {
+    text-align: center;
+    padding: 20px 10px;
+    background: #eef2ff;
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.steps div:hover {
+    transform: translateY(-5px);
+    background: #e0e7ff;
+}
+
+.steps span {
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.steps p {
+    font-weight: bold;
+    color: #334155;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #c7d2fe;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    .input-area div {
+        width: 100%;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .card,
+    .result-section,
+    .how-card {
+        padding: 20px;
+    }
+}
